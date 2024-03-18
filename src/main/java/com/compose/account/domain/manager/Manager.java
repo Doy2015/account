@@ -1,11 +1,13 @@
 package com.compose.account.domain.manager;
 
-import com.compose.account.infra.config.RoleType;
+import com.compose.account.infra.enums.RoleType;
 import jakarta.persistence.*;
 import lombok.AccessLevel;
+import lombok.Getter;
 import lombok.NoArgsConstructor;
 
 @Entity
+@Getter
 @NoArgsConstructor(access = AccessLevel.PROTECTED)
 @Table
 public class Manager {

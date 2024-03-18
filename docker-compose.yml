@@ -1,0 +1,22 @@
+#version: "3.3"
+#
+#services:
+#  account:
+#    image: compose-account:latest
+#    ports:
+#      - "9094:9094"
+#  system:
+#    image: compose-system:latest
+#    ports:
+#      - "9095:9095"
+#
+
+version: "3.3"
+
+services:
+  system:
+    build:
+      context: ../system/
+      dockerfile: Dockerfile
+    ports:
+      - "9095:9095"

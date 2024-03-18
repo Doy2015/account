@@ -1,6 +1,6 @@
 package com.compose.account.domain.manager;
 
-import com.compose.account.infra.config.RoleType;
+import com.compose.account.infra.enums.RoleType;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
